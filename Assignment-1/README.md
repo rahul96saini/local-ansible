@@ -304,7 +304,7 @@ ansible all -m file -a "path=/archive mode='0755' owner=root group=root"
 ![Screenshot 1](a1.23.png)
 ![Screenshot 2](a1.24.png)
 ![Screenshot 3](a1.25.png)
-![Screenshot 4](a1.26verify.png.)
+![Screenshot 4](a1.26verify.png)
 ![Screenshot 5](a1.27.png)
 ![Screenshot 6](a1.28.png)
 ![Screenshot 7](a1.29.png)
