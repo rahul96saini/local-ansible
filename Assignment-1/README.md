@@ -118,6 +118,11 @@ ansible all -m group -a "name=admin-group state=present"
 
 ---
 
+## Screenshots
+
+![Screenshot 1](a1.1.png)
+![Screenshot 2](a1.2.png)
+
 # Part B: Advanced User Management
 
 ### The Task:
@@ -167,6 +172,19 @@ ansible all -m copy -a "content='%admin-group ALL=(ALL) NOPASSWD: ALL' dest=/etc
 
 ---
 
+## Screenshots
+
+![Screenshot 1](a1.3.png)
+![Screenshot 2](a1.5.png)
+![Screenshot 3](a1.6.png)
+![Screenshot 4](a1.7.png)
+![Screenshot 5](a1.8.png)
+![Screenshot 6](a1.9.png)
+![Screenshot 7](a1.10.png)
+![Screenshot 8](a1.11.png)
+![Screenshot 9](a1.12.png)
+![Screenshot 10](a1.13.png)
+
 # Part C: Advanced Directory Structure
 
 ### The Task:
@@ -209,6 +227,18 @@ ansible all -m file -a "path=/archive state=directory"
 ```
 
 ---
+
+## Screenshots
+
+![Screenshot 1](a1.14.png)
+![Screenshot 2](a1.15.png)
+![Screenshot 3](a1.16.png)
+![Screenshot 4](a1.17.png)
+![Screenshot 5](a1.18.png)
+![Screenshot 6](a1.19.png)
+![Screenshot 7](a1.20.png)
+![Screenshot 8](a1.21verify.png)
+![Screenshot 9](a1.22verify.png)
 
 # Part D: Security & Permission Matrix
 
@@ -265,3 +295,17 @@ ansible all -m file -a "path=/projects/Mobile mode='2775' owner=devuser2 group=d
 # 4. Apply Shared & Archive Permissions (0777 / 0755)
 ansible all -m file -a "path=/shared mode='0777' owner=root group=root"
 ansible all -m file -a "path=/archive mode='0755' owner=root group=root"
+```
+
+---
+
+## Screenshots
+
+![Screenshot 1](a1.23.png)
+![Screenshot 2](a1.24.png)
+![Screenshot 3](a1.25.png)
+![Screenshot 4](a1.26verify.png.)
+![Screenshot 5](a1.27.png)
+![Screenshot 6](a1.28.png)
+![Screenshot 7](a1.29.png)
+![Screenshot 8](a1.30verify.png)
