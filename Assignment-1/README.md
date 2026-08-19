@@ -54,9 +54,13 @@ become = True
 become_method = sudo
 become_user = root
 become_ask_pass = False
+```
+
+---
 
 * **What it is**: The global configuration file for Ansible that defines default settings and execution parameters for all ad-hoc commands and playbooks run from this directory.
 * **Why we used it**: 
+
   * `inventory = ./inventory`: Points Ansible directly to our custom hosts file so we don't need to specify `-i inventory` every time we run a command.
   * `host_key_checking = False`: Disables SSH key verification to prevent connection prompts or host key mismatch errors during automated remote execution.
   * `[privilege_escalation]`: Configures Ansible to automatically elevate privileges to `root` via `sudo` without requesting a password (`become_ask_pass = False`), ensuring uninterrupted execution for administrative tasks like user creation and file permission changes.
@@ -67,6 +71,7 @@ become_ask_pass = False
 
 ```ini
 web1 ansible_host=43.204.236.24 ansible_user=ubuntu ansible_ssh_private_key_file=/home/rahul/.ssh/my_guru.pem
+```
 
 * **What it is**: The target host manifest file containing the IP addresses, domain names, and connection parameters for the remote managed servers.
 * **Why we used it**: 
@@ -79,6 +84,7 @@ web1 ansible_host=43.204.236.24 ansible_user=ubuntu ansible_ssh_private_key_file
 
 ```ini
 %admin-group ALL=(ALL) NOPASSWD: ALL
+```
 
 * **What it is**: A standalone local text file containing a custom `sudoers` privilege directive.
 * **Why we used it**: 
