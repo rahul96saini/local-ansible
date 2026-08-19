@@ -1,0 +1,32 @@
+ANSIBLE ASSIGNMENT-1
+
+UserManager
+Project Management System:
+Create a comprehensive user and project management system with following requirements:
+
+Team Structure:
+  - Create Development Team (dev-team)
+  - Create DevOps Team (devops-team)
+  - Create Admin Group (admin-group)
+
+Advanced User Management:
+  - Add 3 users to each team (total 9 users)
+  - Each user must have custom UID starting from 2000
+  - Set different login shells based on team role
+  - Implement password policies with expiry
+  - Create sudo access for specific teams
+
+Advanced Directory Structure:
+  - Personal workspace in home directory
+  - Team collaboration directories with advanced permissions
+  - Project-specific directories (3 projects: WebApp, API, Mobile)
+  - Shared resources directory accessible by all teams
+  - Archive directory with read-only access for completed projects
+
+Security & Permission Matrix:
+  - Personal Workspace: Owner full access, team read access
+  - Team Directories: Team full access, other teams read-only
+  - Project Directories: Project leads full access, assigned teams read/write, others read-only
+  - Shared Resources: All teams read/write access
+  - Archive: All users read-only access
+  - Admin Areas: Only admin-group full access
